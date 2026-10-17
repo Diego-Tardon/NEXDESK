@@ -1,32 +1,56 @@
-# React + TypeScript + Vite
+# NEXDESK — Sistema de Soporte TI
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+NEXDESK es una aplicación web Full Stack para gestionar tickets de soporte informático, desarrollada como proyecto personal para mi portafolio de Analista Programador.
 
-Currently, two official plugins are available:
+## 🌐 Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**[Ver NEXDESK en vivo](https://nexdesk-um3y.onrender.com)**
 
-## React Compiler
+## 🚀 Funcionalidades
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Inicio de sesión y registro de usuarios.
+- Creación, edición y seguimiento de tickets.
+- Roles de administrador, técnico y usuario.
+- Asignación de tickets a técnicos.
+- Dashboard con estadísticas.
+- Gestión de usuarios y perfiles.
+- Diseño adaptable a dispositivos móviles.
 
-## Expanding the Oxlint configuration
+## 🛠️ Tecnologías
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+- **Frontend:** React, TypeScript, Tailwind CSS y Vite.
+- **Backend:** Supabase.
+- **Base de datos:** PostgreSQL.
+- **Despliegue:** Render.
+- **Control de versiones:** Git y GitHub.
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+## 💻 Instalación
+
+Clonar el repositorio:
+
+```bash
+git clone https://github.com/Diego-Tardon/NEXDESK.git
+cd NEXDESK
+npm install
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Crear un archivo `.env` con las variables de Supabase:
+
+```env
+VITE_SUPABASE_URL=tu_url
+VITE_SUPABASE_PUBLISHABLE_KEY=tu_clave_publicable
+```
+
+Ejecutar el proyecto:
+
+```bash
+npm run dev
+```
+
+*Para utilizar todas las funcionalidades se necesita una base de datos Supabase configurada.*
+
+## 👨‍💻 Autor
+
+**Diego Tardon** — Analista Programador
+
+[GitHub](https://github.com/Diego-Tardon)
